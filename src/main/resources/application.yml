@@ -12,7 +12,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8080/realms/saga-app
+          issuer-uri: http://localhost:8080/realms/saga
 
   jpa:
     hibernate:
@@ -23,3 +23,10 @@ spring:
         format_sql: true
     database: postgresql
     datbase-platform: org.hibernate.dialect.PostgreSQLDialect
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.security.web.access: DEBUG
+    org.springframework.security.web.FilterChainProxy: DEBUG
+        
